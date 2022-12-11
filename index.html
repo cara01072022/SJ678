@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657639164-ZdR7Gvjk" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "ด่วนแจกโค้ดฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1040358551136247829/1040358806321909831/1.png",
+            "aspectRatio": "10.40:15.80",
+            "size": "full"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1040358551136247829/1040358802974855298/29a77f35c408db28.png",
+                "size": "full",
+                "aspectRatio": "4.8:1.3"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1040358551136247829/1040358805898276946/e5650a06ed026cbd.png",
+                "size": "full",
+                "aspectRatio": "4.8:1.3"
+              }
+            ]
+          }
+        ],
+        "margin": "sm",
+        "spacing": "xs",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/OKa8OcG"
+        }
+      }
+    ],
+    "paddingAll": "md",
+    "backgroundColor": "#330033",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#330033",
+      "endColor": "#330033",
+      "centerColor": "#ff66ff"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
